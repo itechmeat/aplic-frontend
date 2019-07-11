@@ -1,0 +1,109 @@
+%resetList {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+%resetButton {
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: none;
+  color: inherit;
+  font-family: inherit;
+  font-size: 100%;
+  font-weight: 400;
+  text-decoration: none;
+  outline: none;
+  cursor: pointer;
+}
+
+@mixin display($media) {
+  @if $media == qhd {
+    @media screen and (min-width: $m_qhd) { @content; }
+  }
+  @else if $media == hd {
+    @media screen and (min-width: $m_hd) { @content; }
+  }
+  @else if $media == big {
+    @media screen and (min-width: $m_big) { @content; }
+  }
+  @else if $media == desktop {
+    @media screen and (min-width: $m_desktop) { @content; }
+  }
+  @else if $media == tablet {
+    @media screen and (min-width: $m_tablet) { @content; }
+  }
+  @else if $media == phablet {
+    @media screen and (min-width: $m_phablet) { @content; }
+  }
+  @else if $media == smart {
+    @media screen and (min-width: $m_smart) { @content; }
+  }
+  @else if $media == phone {
+    @media screen and (min-width: $m_phone) { @content; }
+  }
+}
+
+@mixin display-less($media) {
+  @if $media == qhd {
+    @media screen and (max-width: $m_qhd) { @content; }
+  }
+  @else if $media == hd {
+    @media screen and (max-width: $m_hd) { @content; }
+  }
+  @else if $media == big {
+    @media screen and (max-width: $m_big) { @content; }
+  }
+  @else if $media == desktop {
+    @media screen and (max-width: $m_desktop) { @content; }
+  }
+  @else if $media == tablet {
+    @media screen and (max-width: $m_tablet) { @content; }
+  }
+  @else if $media == phablet {
+    @media screen and (max-width: $m_phablet) { @content; }
+  }
+  @else if $media == smart {
+    @media screen and (max-width: $m_smart) { @content; }
+  }
+  @else if $media == phone {
+    @media screen and (max-width: $m_phone) { @content; }
+  }
+}
+
+%inner {
+  position: relative;
+  max-width: $g_layout_max + $g*2;
+  min-width: $g_layout_min;
+  margin: 0 auto;
+  padding: 0 $g;
+
+  //@include display(phablet) {
+  //	max-width: $g_layout_max + 20;
+  //	padding: 0 $g + 10;
+  //}
+  //
+  //@include display(desktop) {
+  //	max-width: $g_layout_max + 40;
+  //	padding: 0 $g + 10;
+  //
+  //	.layout_wide & {
+  //		max-width: 100%;
+  //	}
+  //}
+}
+
+%inner-wide {
+  max-width: $g_layout_wide;
+}
+
+%fill {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
