@@ -1,10 +1,10 @@
 <template>
   <div class="grid">
-    <div class="head">
+    <div v-if="$slots.head" class="head">
       <slot name="head"></slot>
     </div>
 
-    <aside>
+    <aside v-if="$slots.left">
       <slot name="left"></slot>
     </aside>
 

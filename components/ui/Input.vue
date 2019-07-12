@@ -76,7 +76,7 @@ export default {
 
     iconStyle () {
       return {
-        'margin': `0 ${this.iconPosition === 'left' ? '6px' : '0'} 0 ${this.iconPosition === 'right' ? '6px' : '0'}`,
+        'margin': `0 ${this.iconPosition === 'left' ? '2px' : '8px'} 0 ${this.iconPosition === 'right' ? '2px' : '8px'}`,
         'opacity': this.iconOpacity / 100
       };
     },
@@ -91,12 +91,11 @@ export default {
       }, 20)
     },
 
-    handleInput () {
-      console.log('input');
+    handleInput (e) {
+      this.$emit('input', e.target.value);
     },
 
     handleFocus () {
-      console.log('focus');
       this.isFocused = true;
     },
 
@@ -105,13 +104,12 @@ export default {
         if (this.isNoBlur) {
           return;
         }
-        console.log('blur');
         this.isFocused = false;
       }, 10)
     },
 
     handleSubmit () {
-      console.log('submit');
+      this.$emit('submit');
     },
   },
 };
@@ -124,9 +122,8 @@ export default {
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  padding: 0 8px;
-  border: 1px solid $c_border;
-  border-radius: 8px;
+  border: 1px solid $c_border_dark;
+  border-radius: 4px;
   background: $c_light;
   cursor: text;
   transition: $s;
@@ -137,7 +134,7 @@ export default {
 
   &_focused {
     border-color: $c_info;
-    box-shadow: 0 0 12px rgba($c_info, 1);
+    box-shadow: 0 0 0 4px rgba($c_info, .2);
   }
 }
 
@@ -145,13 +142,14 @@ export default {
   flex: 1;
   width: 100%;
   margin: 0;
-  padding: 8px 0;
+  padding: 8px 8px;
   border: none;
+  border-radius: inherit;
   background: none;
   color: $c_text;
   font-family: inherit;
-  font-size: inherit;
-  font-weight: 500;
+  font-size: $fs_body;
+  font-weight: 400;
   line-height: 1.3;
   outline: none;
 
@@ -160,16 +158,16 @@ export default {
   }
 
   .input_small & {
-    padding: 4px 0;
+    padding: 4px 8px;
   }
 
   .input_big & {
-    padding: 14px 0;
+    padding: 14px 8px;
   }
 }
 
 .appendix {
-  margin-right: 3px;
+  margin: 0 3px 0 8px;
   color: $c_text_secondary;
   font-size: inherit;
   font-weight: 500;

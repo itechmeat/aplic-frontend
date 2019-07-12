@@ -1,6 +1,6 @@
 <template>
   <ui-box class="filter">
-    <nuxt-link v-for="item in list" :to="item.link" class="link">
+    <nuxt-link v-for="(item, index) in list" :to="item.link" :key="index" class="link">
       {{ item.text }}
     </nuxt-link>
   </ui-box>
