@@ -1,17 +1,16 @@
 <template>
-  <div class="board">
-    <aside>
-      <program-filter />
-    </aside>
+  <grid-left-center>
+    <program-filter slot="left" />
 
-    <main>
-      <div class="programs">
-        <article v-for="program in programs" :key="program._id" class="program">
-          <program-card :program="program" />
-        </article>
+    <div class="programs">
+      <div v-if="!isReady" class="loading">
+        <ui-spinner />
       </div>
-    </main>
-  </div>
+      <article v-else v-for="program in programs" :key="program._id" class="program">
+        <program-card :program="program" />
+      </article>
+    </div>
+  </grid-left-center>
 </template>
 
 <script>
@@ -26,31 +25,27 @@ export default {
     ProgramCard,
   },
 
-  beforeMount() {
-    this.programs = programsList.programs;
+  mounted() {
+    setTimeout(() => {
+      this.programs = programsList.programs;
+      this.isReady = true;
+    }, 1000);
   },
 
   data() {
     return {
       programs: [],
+      isReady: false,
     };
   },
 };
 </script>
 
 <style lang="scss" scoped>
-.board {
-  flex: 1;
-  display: flex;
-}
-
-aside {
-  flex: 0 0 276px;
-  margin-right: $g*2;
-}
-
-main {
-  flex: 1;
+.loading {
+  position: relative;
+  height: 50vh;
+  opacity: .3;
 }
 
 .program:not(:first-child) {
