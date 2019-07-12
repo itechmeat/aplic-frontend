@@ -4,16 +4,20 @@
       <nuxt-link to="/" class="brand">
         <Logo />
       </nuxt-link>
+
+      <Navigation />
     </ui-container>
   </header>
 </template>
 
 <script>
 import Logo from './Logo'
+import Navigation from './Navigation'
 
 export default {
   components: {
     Logo,
+    Navigation,
   },
 
   props: {

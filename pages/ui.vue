@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="page-ui">
 
     <ui-section title="Buttons">
       <ui-box>
@@ -386,6 +386,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.page-ui {
+  flex: 1 1 auto;
+}
+
 ul {
   @extend %resetList;
   display: flex;

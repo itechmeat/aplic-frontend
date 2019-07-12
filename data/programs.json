@@ -1,0 +1,356 @@
+{
+  "programs": [
+    {
+      "_id": "36fbb22f-3d8d-43e1-9e31-3863ebd29646",
+      "slug": "sport_and_exercise_science",
+      "title": "Sport and Exercise Science",
+      "text": "In choosing to study Aberystwyth University's BSc Sport and Exercise Science Degree you will experience a degree programme designed to be interdisciplinary and multidisciplinary in nature. Combining disciplines such as Physiology, Psychology and Biomechanics, the Sport and Exercise Science Degree provides you with the applied skills, knowledge and competences that will act as the foundation for your future career. The degree prepares you to support athletes, promote physical activity and hea",
+      "school": {
+        "slug": "aberystwyth_university",
+        "name": "Aberystwyth University",
+        "logo": "https://aplic.io/uploads/ba4bff1f-da4f-49dd-bee5-784cfae9d3e2_logo_Aber.png",
+        "poster": "https://aplic.io/uploads/ba4bff1f-da4f-49dd-bee5-784cfae9d3e2_campus_Aber%20Cam.jpg",
+        "processing_time_to": 30,
+        "location": {
+          "country": {
+            "slug": "united_kingdom",
+            "name": "United Kingdom"
+          },
+          "city": {
+            "slug": "aberystwyth",
+            "name": "Aberystwyth"
+          }
+        }
+      },
+      "price": {
+        "currency": "GBP",
+        "international": 15200,
+        "domestic": 0,
+        "living": 7550,
+        "application_fee": 13
+      },
+      "exams": ["IELTS", "PTE", "TOEFL iBT"],
+      "review": "Review",
+      "degree": "Bachelor degree",
+      "type": ["Full-Time"],
+      "months": 36
+    },
+    {
+      "_id": "d99aa10e-85f6-48cc-87ef-1c79e30be31b",
+      "slug": "bachelor_of_applied_science",
+      "title": "Bachelor of Applied Science (Sport and Exercise Science)",
+      "text": "This programme equips students with practical skills and expertise needed to work in a wide range of sports, health and exercise science fields.",
+      "school": {
+        "slug": "ara_institute_of_canterbury",
+        "name": "Ara Institute of Canterbury",
+        "logo": "https://aplic.io/uploads/383d9880-bff5-4ba4-a307-1776c49be44c_logo_Ara_Institute_of_Canterbury.png",
+        "poster": "https://aplic.io/uploads/383d9880-bff5-4ba4-a307-1776c49be44c_campus_City_Campus_01.jpg",
+        "processing_time_from": 28,
+        "processing_time_to": 40,
+        "location": {
+          "country": {
+            "slug": "new zealand",
+            "name": "New Zealand"
+          },
+          "city": {
+            "slug": "christchurch",
+            "name": "Christchurch"
+          }
+        }
+      },
+      "price": {
+        "currency": "NZD",
+        "international": 22360,
+        "domestic": 7450,
+        "living": 24000,
+        "application_fee": 100
+      },
+      "exams": ["IELTS", "PTE", "TOEFL iBT", "TOEFL PBT"],
+      "review": "Review",
+      "degree": "Bachelor degree",
+      "type": ["Full-Time", "Part-Time"],
+      "months": 36
+    },
+    {
+      "_id": "62c01566-ed0f-4a7e-9d6a-333c7736681f",
+      "slug": "sport_leadership_and_management_specialisation_-_master_of_business",
+      "title": "Sport Leadership and Management Specialisation - Master of Business",
+      "text": "This madter programme is a part of Master of Business. It aims at those who wants to advance understanding of sport leadership and management, and research a topic of interest with the Sport Leadership and Management specialisation in the Master of Business.",
+      "school": {
+        "slug": "auckland_university_of_technology",
+        "name": "Auckland University of Technology",
+        "country": "New Zealand",
+        "city": "Auckland",
+        "logo": "https://aplic.io/uploads/e8d18de4-0107-4156-a7be-0020ee22fe73_logo_aut-crest.gif",
+        "poster": "https://aplic.io/uploads/e8d18de4-0107-4156-a7be-0020ee22fe73_campus_autcampus.jpg",
+        "location": {
+          "country": {
+            "slug": "new zealand",
+            "name": "New Zealand"
+          },
+          "city": {
+            "slug": "auckland",
+            "name": "Auckland"
+          }
+        }
+      },
+      "price": {
+        "currency": "NZD",
+        "international": 33330,
+        "domestic": 8540,
+        "living": 210000,
+        "application_fee": 150
+      },
+      "exams": ["IELTS", "PTE", "TOEFL iBT"],
+      "review": "Review",
+      "degree": "Bachelor degree",
+      "type": ["Full-Time"],
+      "months": 18
+    },
+    {
+      "_id": "31543ce1-e106-4890-a1e8-b6ad7fbd23f1",
+      "slug": "sport_science_bsc",
+      "title": "Sport Science BSc (Hons)",
+      "text": "Do you dream of working with elite athletes to help improve their performance or want a better understanding of how science can be applied to sport to improve your coaching or teaching ability? Do you want to develop your understanding of exercise as a medicine for people with health problems or want to promote the benefits of physical activity and exercise? This broad ranging course is uniquely designed to help you realise these dreams. Drawing on 40 years of experience, we pride ourselves",
+      "school": {
+        "slug": "bangor_university",
+        "name": "Bangor University",
+        "logo": "https://aplic.io/uploads/f318700e-f39d-459e-a562-44b96889d758_logo_A1.png",
+        "poster": "https://aplic.io/uploads/f318700e-f39d-459e-a562-44b96889d758_campus_bangor-university.jpg",
+        "processing_time_to": 30,
+        "location": {
+          "country": {
+            "slug": "united_kingdom",
+            "name": "United Kingdom"
+          },
+          "city": {
+            "slug": "bangor",
+            "name": "Bangor"
+          }
+        }
+      },
+      "price": {
+        "currency": "GBP",
+        "international": 15000,
+        "domestic": 0,
+        "living": 12000,
+        "application_fee": 0
+      },
+      "exams": ["IELTS", "PTE"],
+      "review": "Review",
+      "degree": "Bachelor degree",
+      "type": ["Full-Time"],
+      "months": 36
+    },
+    {
+      "_id": "5d03dc3e-eba9-4118-a2e2-5c49a715628b",
+      "slug": "sport_health_and_physical+education_bsc",
+      "title": "Sport, Health and Physical Education BSc (Hons)",
+      "text": "The great thing about this degree is that it offers you the opportunity to learn about all aspects of sport, health and physical education. This maximises your potential and opens the door to a variety of exciting careers opportunities. This degree is particularly good for those wishing to pursue a career in teaching physical education and sets you up well to progress to a Postgraduate Certificate of Education. Likewise, if you wish to pursue a career in the fitness industry or in coaching this",
+      "school": {
+        "slug": "bangor_university",
+        "name": "Bangor University",
+        "logo": "https://aplic.io/uploads/f318700e-f39d-459e-a562-44b96889d758_logo_A1.png",
+        "poster": "https://aplic.io/uploads/f318700e-f39d-459e-a562-44b96889d758_campus_bangor-university.jpg",
+        "processing_time_to": 30,
+        "location": {
+          "country": {
+            "slug": "united_kingdom",
+            "name": "United Kingdom"
+          },
+          "city": {
+            "slug": "bangor",
+            "name": "Bangor"
+          }
+        }
+      },
+      "price": {
+        "currency": "GBP",
+        "international": 15000,
+        "domestic": 0,
+        "living": 12000,
+        "application_fee": 0
+      },
+      "exams": ["IELTS", "PTE"],
+      "review": "Review",
+      "degree": "Bachelor degree",
+      "type": ["Full-Time"],
+      "months": 36
+    },
+    {
+      "_id": "a9092462-330d-425f-a4aa-a0bdabeecdf8",
+      "slug": "applied_sport_science_msc",
+      "title": "Applied Sport Science MSc",
+      "text": "This course provides a focus on sport and performance. It has been designed to be flexible and relevant to the student’s individual needs and interests, with a strong emphasis on the application of theory to professional practice.",
+      "school": {
+        "slug": "bangor_university",
+        "name": "Bangor University",
+        "logo": "https://aplic.io/uploads/f318700e-f39d-459e-a562-44b96889d758_logo_A1.png",
+        "poster": "https://aplic.io/uploads/f318700e-f39d-459e-a562-44b96889d758_campus_bangor-university.jpg",
+        "processing_time_to": 30,
+        "location": {
+          "country": {
+            "slug": "united_kingdom",
+            "name": "United Kingdom"
+          },
+          "city": {
+            "slug": "bangor",
+            "name": "Bangor"
+          }
+        }
+      },
+      "price": {
+        "currency": "GBP",
+        "international": 15000,
+        "domestic": 0,
+        "living": 12000,
+        "application_fee": 0
+      },
+      "exams": ["IELTS", "PTE"],
+      "review": "Review",
+      "degree": "Bachelor degree",
+      "type": ["Full-Time"],
+      "months": 12
+    },
+    {
+      "_id": "a5309ce8-52d8-46cf-a79e-8b2d9f710e9e",
+      "slug": "sport_management_msc",
+      "title": "Sport Management MSc",
+      "text": "This programme is designed to give you the skills and expertise you need to compete in the sport industry and related businesses and organisations, by combining specialist teaching about the principles and practice of sport management with general training in management, business organisation, strategy and research methods. It covers several key areas, such as governance and regulatory issues, with emphasis on the wider sport sector. It will help you to develop a deeper understanding of manag",
+      "school": {
+        "slug": "birkbeck_university_of_london",
+        "name": "Birkbeck, University of London",
+        "logo": "https://aplic.io/uploads/183c9551-8d66-4a91-a436-f5c1ca639fa7_logo_Birkbeck,_University_of_London_crest.svg.png",
+        "poster": "https://aplic.io/uploads/183c9551-8d66-4a91-a436-f5c1ca639fa7_campus_A_view_of_Birkbeck,_University_of_London.jpg",
+        "processing_time_to": 30,
+        "location": {
+          "country": {
+            "slug": "united_kingdom",
+            "name": "United Kingdom"
+          },
+          "city": {
+            "slug": "london",
+            "name": "London"
+          }
+        }
+      },
+      "price": {
+        "currency": "GBP",
+        "international": 17850,
+        "domestic": 11550,
+        "living": 12500,
+        "application_fee": 0
+      },
+      "exams": ["IELTS", "PTE", "TOEFL iBT"],
+      "review": "Review",
+      "degree": "Master degree",
+      "type": ["Full-Time"],
+      "months": 12
+    },
+    {
+      "_id": "0df4ff45-adf5-4c21-90af-adf23d02faae",
+      "slug": "sports_studies",
+      "title": "Sports Studies",
+      "text": "The Sports Studies program provides an intensive study of sport and exercise in society. It’s designed to encourage students to adopt an interdisciplinary perspective that gathers together the individual, local, national and international dimensions of sport and exercise. Consequently, it exposes students to the social, biological, political, business and economic aspects of sport in sport in society. It also provides opportunities for practical experiences.",
+      "school": {
+        "slug": "bishops_university",
+        "name": "Bishop's University",
+        "logo": "https://aplic.io/uploads/b1977fd3-2c51-4fbe-b0ea-1f6d3247aed9_logo_Bishop's_University_New_CoA.png",
+        "poster": "https://aplic.io/uploads/b1977fd3-2c51-4fbe-b0ea-1f6d3247aed9_campus_bishop-s-university.jpg",
+        "processing_time_to": 30,
+        "location": {
+          "country": {
+            "slug": "canada",
+            "name": "Canada"
+          },
+          "city": {
+            "slug": "sherbrooke",
+            "name": "Sherbrooke"
+          }
+        }
+      },
+      "price": {
+        "exams": ["IELTS", "PTE", "TOEFL iBT"],
+        "international": 16850,
+        "domestic": 7631,
+        "living": 4800,
+        "application_fee": 65
+      },
+      "exams": ["IELTS", "PTE", "TOEFL iBT"],
+      "review": "Review",
+      "degree": "Bachelor degree",
+      "type": ["Full-Time"],
+      "months": 48
+    },
+    {
+      "_id": "abeb0bc0-08d1-4526-b44c-c23e01a13911",
+      "slug": "sport_management",
+      "title": "Sport Management",
+      "text": "We are known and respected for our comprehensive curriculum which expands our students’ understanding of the multi-faceted sport industry. Our knowledgeable faculty members are dedicated to quality research and ensuring our students have the opportunity to apply what they have learned in the classroom in practical ways.",
+      "school": {
+        "slug": "brock_university",
+        "name": "Brock University",
+        "logo": "https://aplic.io/uploads/6899f888-581e-40ca-b1f3-cfbd9df9de1b_logo_210px-BrockU_CoA.jpg",
+        "poster": "https://aplic.io/uploads/6899f888-581e-40ca-b1f3-cfbd9df9de1b_campus_Exterior-Brock-Downtown-Campus-10-min-1800x1100.jpg",
+        "processing_time_to": 14,
+        "location": {
+          "country": {
+            "slug": "canada",
+            "name": "Canada"
+          },
+          "city": {
+            "slug": "st_catharines",
+            "name": "St. Catharines"
+          }
+        }
+      },
+      "price": {
+        "currency": "CAD",
+        "international": 26557,
+        "domestic": 6766,
+        "living": 7000,
+        "application_fee": 55
+      },
+      "exams": ["IELTS", "PTE", "TOEFL iBT"],
+      "review": "Review",
+      "degree": "Bachelor degree",
+      "type": ["Full-Time"],
+      "months": 48
+    },
+    {
+      "_id": "26b4a85d-787b-43bd-a765-47bca3adaf6f",
+      "slug": "psychology_bsc",
+      "title": "Psychology (Sport, Health and Exercise) BSc",
+      "text": "Psychology in Sport, Health and Exercise is an area of growing interest, particularly in the world of professional sport. Through studying the link between the mind and the body, we can understand things like motivation and determination, and the effect that physical activity has on the brain. The Division of Psychology offers a firm foundation of learning including cognitive psychology, developmental psychology, and biological psychology. Quantitive and qualitative research methods are taugh",
+      "school": {
+        "slug": "brunel_university_london",
+        "name": "Brunel University London",
+        "logo": "https://aplic.io/uploads/dfb2eb24-0a65-4765-959c-2b4f46fea25e_logo_Brunel.png",
+        "poster": "https://aplic.io/uploads/dfb2eb24-0a65-4765-959c-2b4f46fea25e_campus_Brunel%20campus.jpg",
+        "processing_time_to": 30,
+        "location": {
+          "country": {
+            "slug": "united_kingdom",
+            "name": "United Kingdom"
+          },
+          "city": {
+            "slug": "uxbridge",
+            "name": "Uxbridge"
+          }
+        }
+      },
+      "price": {
+        "currency": "GBP",
+        "international": 16850,
+        "domestic": 9250,
+        "living": 11385,
+        "application_fee": 0
+      },
+      "exams": ["IELTS", "PTE", "TOEFL iBT"],
+      "review": "Review",
+      "degree": "Bachelor degree",
+      "type": ["Full-Time"],
+      "months": 36
+    }
+  ]
+}

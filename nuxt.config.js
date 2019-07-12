@@ -26,7 +26,7 @@ export default {
   ** Global CSS
   */
   css: [
-    // { src: '~styles/main.scss', lang: 'scss' },
+    { src: '~styles/_base.scss', lang: 'scss' },
   ],
 
   styleResources: {

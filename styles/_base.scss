@@ -1,0 +1,55 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  overflow: hidden;
+  overflow-y: auto;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: $ff;
+  font-size: $fs_body;
+  font-weight: 400;
+  line-height: 1.5;
+  background-color: $c_bg;
+  color: $c_text;
+}
+
+a {
+  color: $c_primary;
+  text-decoration: underline;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+p {
+  margin: $g 0;
+
+  &:first-child {
+    margin-top: 0;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.text {
+  &-secondary {
+    color: $c_text_secondary;
+  }
+
+  &-hint {
+    color: $c_text_hint;
+  }
+}
