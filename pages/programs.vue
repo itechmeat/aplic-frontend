@@ -38,6 +38,13 @@ export default {
       isReady: false,
     };
   },
+
+  head: {
+    title: 'Choose your program',
+    meta: [
+      { hid: 'description', name: 'description', content: 'Programs page description' },
+    ],
+  },
 };
 </script>
 

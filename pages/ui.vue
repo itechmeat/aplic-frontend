@@ -382,6 +382,13 @@ export default {
       }, 5000)
     },
   },
+
+  head: {
+    title: 'UI Kit',
+    meta: [
+      { hid: 'description', name: 'description', content: 'description' },
+    ],
+  },
 };
 </script>
 

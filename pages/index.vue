@@ -11,3 +11,14 @@
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  head: {
+    title: 'Study Abroad - Apply Now to Top Global Schools With One Single Application | Aplic.io',
+    meta: [
+      { hid: 'description', name: 'description', content: 'Programs page description' },
+    ],
+  },
+}
+</script>

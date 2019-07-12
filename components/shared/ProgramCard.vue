@@ -3,26 +3,26 @@
     <div class="about">
       <div class="main">
         <header>
-          <nuxt-link :to="'/schools/' + program.school.slug" class="logo">
-            <img :src="program.school.logo" alt="">
+          <nuxt-link :to="'/universitys/' + program.university.slug" class="logo">
+            <img :src="program.university.logo" alt="">
           </nuxt-link>
           <h3>
-            <nuxt-link :to="'/schools/' + program.school.slug + '/programs/' + program.slug">
+            <nuxt-link :to="'/universitys/' + program.university.slug + '/programs/' + program.slug">
               {{ program.title }}
             </nuxt-link>
           </h3>
-          <div class="school">
-            <nuxt-link :to="'/schools/' + program.school.slug">
-              {{ program.school.name }}
+          <div class="university">
+            <nuxt-link :to="'/universitys/' + program.university.slug">
+              {{ program.university.name }}
             </nuxt-link>
           </div>
           <div class="location">
             <ui-icon name="map-marker" class="marker" />
-            <nuxt-link :to="'/location/' + program.school.location.country.slug + '/' + program.school.location.city.slug" class="city">
-              {{ program.school.location.city.name }}
+            <nuxt-link :to="'/location/' + program.university.location.country.slug + '/' + program.university.location.city.slug" class="city">
+              {{ program.university.location.city.name }}
             </nuxt-link>,
-            <nuxt-link :to="'/location/' + program.school.location.country.slug" class="country">
-              {{ program.school.location.country.name }}
+            <nuxt-link :to="'/location/' + program.university.location.country.slug" class="country">
+              {{ program.university.location.country.name }}
             </nuxt-link>
           </div>
         </header>
@@ -34,16 +34,16 @@
 
       <div class="side">
         <div class="poster">
-          <img :src="program.school.poster" alt="">
+          <img :src="program.university.poster" alt="">
         </div>
-        <div v-if="program.school.processing_time_from || program.school.processing_time_to" class="processing">
+        <div v-if="program.university.processing_time_from || program.university.processing_time_to" class="processing">
           <span class="view">
             <ui-icon name="calendar-alt" class="icon" />
           </span>
           <span class="label">
-            <template v-if="program.school.processing_time_from">{{ program.school.processing_time_from }}</template>
-            <template v-if="program.school.processing_time_from && program.school.processing_time_to">-</template>
-            <template v-if="program.school.processing_time_to">{{ program.school.processing_time_to }}</template>
+            <template v-if="program.university.processing_time_from">{{ program.university.processing_time_from }}</template>
+            <template v-if="program.university.processing_time_from && program.university.processing_time_to">-</template>
+            <template v-if="program.university.processing_time_to">{{ program.university.processing_time_to }}</template>
             Overage processing time
           </span>
         </div>
@@ -150,7 +150,7 @@ header {
   grid-template-columns: 64px 1fr;
   grid-template-areas:
     "logo title"
-    "logo school"
+    "logo university"
     "logo location";
 }
 
@@ -179,8 +179,8 @@ h3 {
   }
 }
 
-.school {
-  grid-area: school;
+.university {
+  grid-area: university;
   font-size: $fs_small;
 
   a {
