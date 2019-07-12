@@ -3,47 +3,42 @@
     <div class="about">
       <div class="main">
         <header>
-          <nuxt-link :to="'/universities/' + program.university.slug" class="logo">
-            <img :src="program.university.logo" alt="">
+          <nuxt-link :to="'/universities/' + university.slug" class="logo">
+            <img :src="university.logo" alt="">
           </nuxt-link>
           <h3>
-            <nuxt-link :to="'/universities/' + program.university.slug + '/programs/' + program.slug">
-              {{ program.title }}
+            <nuxt-link :to="'/universities/' + university.slug">
+              {{ university.name }}
             </nuxt-link>
           </h3>
-          <div class="university">
-            <nuxt-link :to="'/universities/' + program.university.slug">
-              {{ program.university.name }}
-            </nuxt-link>
-          </div>
           <div class="location">
             <ui-icon name="map-marker" class="marker" />
-            <nuxt-link :to="'/location/' + program.university.location.country.slug + '/' + program.university.location.city.slug" class="city">
-              {{ program.university.location.city.name }}
+            <nuxt-link :to="'/location/' + university.location.country.slug + '/' + university.location.city.slug" class="city">
+              {{ university.location.city.name }}
             </nuxt-link>,
-            <nuxt-link :to="'/location/' + program.university.location.country.slug" class="country">
-              {{ program.university.location.country.name }}
+            <nuxt-link :to="'/location/' + university.location.country.slug" class="country">
+              {{ university.location.country.name }}
             </nuxt-link>
           </div>
         </header>
 
         <section>
-          <p>{{ program.text }}</p>
+          <p>{{ university.text }}</p>
         </section>
       </div>
 
       <div class="side">
         <div class="poster">
-          <img :src="program.university.poster" alt="">
+          <img :src="university.poster" alt="">
         </div>
-        <div v-if="program.university.processing_time_from || program.university.processing_time_to" class="processing">
+        <div v-if="university.processing_time_from || university.processing_time_to" class="processing">
           <span class="view">
             <ui-icon name="calendar-alt" class="icon" />
           </span>
           <span class="label">
-            <template v-if="program.university.processing_time_from">{{ program.university.processing_time_from }}</template>
-            <template v-if="program.university.processing_time_from && program.university.processing_time_to">-</template>
-            <template v-if="program.university.processing_time_to">{{ program.university.processing_time_to }}</template>
+            <template v-if="university.processing_time_from">{{ university.processing_time_from }}</template>
+            <template v-if="university.processing_time_from && university.processing_time_to">-</template>
+            <template v-if="university.processing_time_to">{{ university.processing_time_to }}</template>
             Overage processing time
           </span>
         </div>
@@ -52,15 +47,15 @@
 
     <div class="cost">
       <div class="international">
-        <b>{{ program.price.currency }} {{ program.price.international }}</b>
+        <b>{{ university.price.currency }} {{ university.price.international }}</b>
         <span>International</span>
       </div>
       <div class="domestic">
-        <b>{{ program.price.currency }} {{ program.price.domestic }}</b>
+        <b>{{ university.price.currency }} {{ university.price.domestic }}</b>
         <span>Domestic</span>
       </div>
       <div class="living">
-        <b>{{ program.price.currency }} {{ program.price.living }}</b>
+        <b>{{ university.price.currency }} {{ university.price.living }}</b>
         <span>Living cost</span>
       </div>
     </div>
@@ -72,7 +67,7 @@
             <ui-icon name="briefcase" class="icon" />
           </span>
           <span class="label">
-            <em v-for="exam in program.exams">{{ exam }}</em>
+            <em v-for="exam in university.exams">{{ exam }}</em>
           </span>
         </div>
 
@@ -80,40 +75,42 @@
           <span class="view">
             <ui-icon name="comment-alt" class="icon" />
           </span>
-          <span class="label">{{ program.review }}</span>
+          <span class="label">{{ university.review }}</span>
         </div>
 
         <div class="param">
           <span class="view">
             <ui-icon name="file-alt" class="icon" />
           </span>
-          <span class="label">{{ program.degree }}</span>
+          <span class="label">{{ university.degree }}</span>
         </div>
 
         <div class="param">
           <span class="view">
             <ui-icon name="map-marker" class="icon" />
           </span>
-          <span v-for="type in program.type" class="label">{{ type }}</span>
+          <span v-for="type in university.type" class="label">{{ type }}</span>
         </div>
 
         <div class="param">
           <span class="view">
             <ui-icon name="location-arrow" class="icon" />
           </span>
-          <span class="label">{{ program.price.currency }} {{ program.price.application_fee }}</span>
+          <span class="label">{{ university.price.currency }} {{ university.price.application_fee }}</span>
         </div>
 
         <div class="param">
           <span class="view">
             <ui-icon name="clock" class="icon" />
           </span>
-          <span class="label">{{ program.months }}</span>
+          <span class="label">{{ university.months }}</span>
         </div>
       </div>
 
       <div class="action">
-        <ui-button type="primary" outline wide>Apply</ui-button>
+        <nuxt-link :to="'/universities/' + university.slug" class="btn">
+          <ui-button type="primary" outline wide>Read More</ui-button>
+        </nuxt-link>
       </div>
     </footer>
   </ui-box>
@@ -122,7 +119,7 @@
 <script>
 export default {
   props: {
-    program: {
+    university: {
       type: Object,
       default() {
         return null;
@@ -150,7 +147,6 @@ header {
   grid-template-columns: 64px 1fr;
   grid-template-areas:
     "logo title"
-    "logo university"
     "logo location";
 }
 
@@ -171,20 +167,6 @@ h3 {
   line-height: 1.5;
 
   a {
-    text-decoration: none;
-
-    &:hover {
-      text-decoration: underline;
-    }
-  }
-}
-
-.university {
-  grid-area: university;
-  font-size: $fs_small;
-
-  a {
-    color: inherit;
     text-decoration: none;
 
     &:hover {
@@ -307,5 +289,9 @@ footer {
   margin: $g 0 0 $g;
   padding: 0 $g;
   text-align: center;
+
+  .btn {
+    text-decoration: none;
+  }
 }
 </style>

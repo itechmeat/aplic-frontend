@@ -1,5 +1,9 @@
 <template>
   <div class="grid">
+    <div class="promo">
+      <slot name="promo"></slot>
+    </div>
+
     <aside>
       <slot name="left"></slot>
     </aside>
@@ -13,7 +17,15 @@
 <style lang="scss" scoped>
 .grid {
   flex: 1;
+  align-self: flex-start;
   display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.promo {
+  flex: 0 0 100%;
+  margin-bottom: $g*2;
 }
 
 aside {

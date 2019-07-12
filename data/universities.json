@@ -1,0 +1,238 @@
+{
+  "universities": [
+    {
+      "slug": "aberystwyth_university",
+      "name": "Aberystwyth University",
+      "logo": "https://aplic.io/uploads/ba4bff1f-da4f-49dd-bee5-784cfae9d3e2_logo_Aber.png",
+      "poster": "https://aplic.io/uploads/ba4bff1f-da4f-49dd-bee5-784cfae9d3e2_campus_Aber%20Cam.jpg",
+      "processing_time_to": 30,
+      "location": {
+        "country": {
+          "slug": "united_kingdom",
+          "name": "United Kingdom"
+        },
+        "city": {
+          "slug": "aberystwyth",
+          "name": "Aberystwyth"
+        }
+      },
+      "price": {
+        "currency": "GBP",
+        "international": 15200,
+        "domestic": 0,
+        "living": 7550,
+        "application_fee": 13
+      },
+      "exams": ["IELTS", "PTE", "TOEFL iBT"],
+      "review": "Review",
+      "degree": "Bachelor degree",
+      "type": ["Full-Time"],
+      "months": 36
+    },
+    {
+      "slug": "ara_institute_of_canterbury",
+      "name": "Ara Institute of Canterbury",
+      "logo": "https://aplic.io/uploads/383d9880-bff5-4ba4-a307-1776c49be44c_logo_Ara_Institute_of_Canterbury.png",
+      "poster": "https://aplic.io/uploads/383d9880-bff5-4ba4-a307-1776c49be44c_campus_City_Campus_01.jpg",
+      "processing_time_from": 28,
+      "processing_time_to": 40,
+      "location": {
+        "country": {
+          "slug": "new zealand",
+          "name": "New Zealand"
+        },
+        "city": {
+          "slug": "christchurch",
+          "name": "Christchurch"
+        }
+      },
+      "price": {
+        "currency": "NZD",
+        "international": 22360,
+        "domestic": 7450,
+        "living": 24000,
+        "application_fee": 100
+      },
+      "exams": ["IELTS", "PTE", "TOEFL iBT", "TOEFL PBT"],
+      "review": "Review",
+      "degree": "Bachelor degree",
+      "type": ["Full-Time", "Part-Time"],
+      "months": 36
+    },
+    {
+      "slug": "auckland_university_of_technology",
+      "name": "Auckland University of Technology",
+      "country": "New Zealand",
+      "city": "Auckland",
+      "logo": "https://aplic.io/uploads/e8d18de4-0107-4156-a7be-0020ee22fe73_logo_aut-crest.gif",
+      "poster": "https://aplic.io/uploads/e8d18de4-0107-4156-a7be-0020ee22fe73_campus_autcampus.jpg",
+      "location": {
+        "country": {
+          "slug": "new zealand",
+          "name": "New Zealand"
+        },
+        "city": {
+          "slug": "auckland",
+          "name": "Auckland"
+        }
+      },
+      "price": {
+        "currency": "NZD",
+        "international": 33330,
+        "domestic": 8540,
+        "living": 210000,
+        "application_fee": 150
+      },
+      "exams": ["IELTS", "PTE", "TOEFL iBT"],
+      "review": "Review",
+      "degree": "Bachelor degree",
+      "type": ["Full-Time"],
+      "months": 18
+    },
+    {
+      "slug": "bangor_university",
+      "name": "Bangor University",
+      "logo": "https://aplic.io/uploads/f318700e-f39d-459e-a562-44b96889d758_logo_A1.png",
+      "poster": "https://aplic.io/uploads/f318700e-f39d-459e-a562-44b96889d758_campus_bangor-university.jpg",
+      "processing_time_to": 30,
+      "location": {
+        "country": {
+          "slug": "united_kingdom",
+          "name": "United Kingdom"
+        },
+        "city": {
+          "slug": "bangor",
+          "name": "Bangor"
+        }
+      },
+      "price": {
+        "currency": "GBP",
+        "international": 15000,
+        "domestic": 0,
+        "living": 12000,
+        "application_fee": 0
+      },
+      "exams": ["IELTS", "PTE"],
+      "review": "Review",
+      "degree": "Bachelor degree",
+      "type": ["Full-Time"],
+      "months": 36
+    },
+    {
+      "slug": "birkbeck_university_of_london",
+      "name": "Birkbeck, University of London",
+      "logo": "https://aplic.io/uploads/183c9551-8d66-4a91-a436-f5c1ca639fa7_logo_Birkbeck,_University_of_London_crest.svg.png",
+      "poster": "https://aplic.io/uploads/183c9551-8d66-4a91-a436-f5c1ca639fa7_campus_A_view_of_Birkbeck,_University_of_London.jpg",
+      "processing_time_to": 30,
+      "location": {
+        "country": {
+          "slug": "united_kingdom",
+          "name": "United Kingdom"
+        },
+        "city": {
+          "slug": "london",
+          "name": "London"
+        }
+      },
+      "price": {
+        "currency": "GBP",
+        "international": 17850,
+        "domestic": 11550,
+        "living": 12500,
+        "application_fee": 0
+      },
+      "exams": ["IELTS", "PTE", "TOEFL iBT"],
+      "review": "Review",
+      "degree": "Master degree",
+      "type": ["Full-Time"],
+      "months": 12
+    },
+    {
+      "slug": "bishops_university",
+      "name": "Bishop's University",
+      "logo": "https://aplic.io/uploads/b1977fd3-2c51-4fbe-b0ea-1f6d3247aed9_logo_Bishop's_University_New_CoA.png",
+      "poster": "https://aplic.io/uploads/b1977fd3-2c51-4fbe-b0ea-1f6d3247aed9_campus_bishop-s-university.jpg",
+      "processing_time_to": 30,
+      "location": {
+        "country": {
+          "slug": "canada",
+          "name": "Canada"
+        },
+        "city": {
+          "slug": "sherbrooke",
+          "name": "Sherbrooke"
+        }
+      },
+      "price": {
+        "exams": ["IELTS", "PTE", "TOEFL iBT"],
+        "international": 16850,
+        "domestic": 7631,
+        "living": 4800,
+        "application_fee": 65
+      },
+      "exams": ["IELTS", "PTE", "TOEFL iBT"],
+      "review": "Review",
+      "degree": "Bachelor degree",
+      "type": ["Full-Time"],
+      "months": 48
+    },
+    {
+      "slug": "brock_university",
+      "name": "Brock University",
+      "logo": "https://aplic.io/uploads/6899f888-581e-40ca-b1f3-cfbd9df9de1b_logo_210px-BrockU_CoA.jpg",
+      "poster": "https://aplic.io/uploads/6899f888-581e-40ca-b1f3-cfbd9df9de1b_campus_Exterior-Brock-Downtown-Campus-10-min-1800x1100.jpg",
+      "processing_time_to": 14,
+      "location": {
+        "country": {
+          "slug": "canada",
+          "name": "Canada"
+        },
+        "city": {
+          "slug": "st_catharines",
+          "name": "St. Catharines"
+        }
+      },
+      "price": {
+        "currency": "CAD",
+        "international": 26557,
+        "domestic": 6766,
+        "living": 7000,
+        "application_fee": 55
+      },
+      "exams": ["IELTS", "PTE", "TOEFL iBT"],
+      "review": "Review",
+      "degree": "Bachelor degree",
+      "type": ["Full-Time"],
+      "months": 48
+    },
+    {
+      "slug": "brunel_university_london",
+      "name": "Brunel University London",
+      "logo": "https://aplic.io/uploads/dfb2eb24-0a65-4765-959c-2b4f46fea25e_logo_Brunel.png",
+      "poster": "https://aplic.io/uploads/dfb2eb24-0a65-4765-959c-2b4f46fea25e_campus_Brunel%20campus.jpg",
+      "processing_time_to": 30,
+      "location": {
+        "country": {
+          "slug": "united_kingdom",
+          "name": "United Kingdom"
+        },
+        "city": {
+          "slug": "uxbridge",
+          "name": "Uxbridge"
+        }
+      },
+      "price": {
+        "currency": "GBP",
+        "international": 16850,
+        "domestic": 9250,
+        "living": 11385,
+        "application_fee": 0
+      },
+      "exams": ["IELTS", "PTE", "TOEFL iBT"],
+      "review": "Review",
+      "degree": "Bachelor degree",
+      "type": ["Full-Time"],
+      "months": 36
+    }
+  ]
+}
