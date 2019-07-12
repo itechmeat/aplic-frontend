@@ -4,24 +4,42 @@
 
     <div v-if="value.text !== null" class="row">
       <ui-form-field label="Search">
-        <ui-input v-model="value.text" type="text" name="text" placeholder="Input your text" />
+        <ui-input
+          v-model="value.text"
+          type="text"
+          name="text"
+          placeholder="Input your text"
+          @submit="submit"
+        />
       </ui-form-field>
     </div>
 
     <div v-if="value.location !== null" class="row">
       <ui-form-field label="location">
-        <ui-input v-model="value.location" type="text" name="location" placeholder="Choose location" />
+        <ui-input
+          v-model="value.location"
+          type="text"
+          name="location"
+          placeholder="Choose location"
+          @submit="submit"
+        />
       </ui-form-field>
     </div>
 
     <div v-if="value.degree !== null" class="row">
       <ui-form-field label="Degree type">
-        <ui-input v-model="value.degree" type="text" name="degree" placeholder="Choose degree" />
+        <ui-input
+          v-model="value.degree"
+          type="text"
+          name="degree"
+          placeholder="Choose degree"
+          @submit="submit"
+        />
       </ui-form-field>
     </div>
 
     <div class="row submit">
-      <ui-button type="success">Submit</ui-button>
+      <ui-button type="success" @click="submit">Submit</ui-button>
     </div>
   </ui-box>
 </template>
@@ -34,6 +52,12 @@ export default {
       required: true,
     },
   },
+
+  methods: {
+    submit() {
+      this.$emit('submit');
+    },
+  }
 };
 </script>
 

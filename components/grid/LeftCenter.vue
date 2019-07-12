@@ -20,7 +20,6 @@
   align-self: flex-start;
   display: flex;
   flex-wrap: wrap;
-  align-items: flex-start;
 }
 
 .head {

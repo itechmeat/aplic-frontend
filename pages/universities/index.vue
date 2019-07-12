@@ -4,7 +4,7 @@
       <h1>Select your University</h1>
     </ui-box>
 
-    <program-filter slot="left" />
+    <program-filter slot="left" v-model="filter" />
 
     <div class="programs">
       <div v-if="!isReady" class="loading">
@@ -38,7 +38,12 @@ export default {
 
   data() {
     return {
-      programs: [],
+      universities: [],
+      filter: {
+        text: '',
+        location: '',
+        degree: '',
+      },
       isReady: false,
     };
   },
