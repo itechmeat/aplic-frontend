@@ -22,7 +22,7 @@
     </span>
   </button>
 
-  <router-link
+  <nuxt-link
     v-else
     :to="!disabled ? href : ''"
     :class="buttonClass"
@@ -44,7 +44,7 @@
     <div v-if="isLoading" class="button__loader">
       <ui-spinner :size="24" />
     </div>
-  </router-link>
+  </nuxt-link>
 </template>
 
 <script>

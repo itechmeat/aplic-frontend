@@ -16,6 +16,11 @@
               {{ program.university.name }}
             </nuxt-link>
           </div>
+          <Location
+            class="location"
+            :country="{name: program.university.location.country.name, slug: program.university.location.country.slug}"
+            :city="{name: program.university.location.city.name, slug: program.university.location.city.slug}"
+          />
           <div class="location">
             <ui-icon name="map-marker" class="marker" />
             <nuxt-link :to="'/location/' + program.university.location.country.slug + '/' + program.university.location.city.slug" class="city">
@@ -120,7 +125,13 @@
 </template>
 
 <script>
+import Location from '../../components/shared/Location';
+
 export default {
+  components: {
+    Location,
+  },
+
   props: {
     program: {
       type: Object,

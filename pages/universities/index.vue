@@ -1,6 +1,6 @@
 <template>
   <grid-left-center>
-    <ui-box slot="promo">
+    <ui-box slot="head">
       <h1>Select your University</h1>
     </ui-box>
 
@@ -18,10 +18,10 @@
 </template>
 
 <script>
-import ProgramFilter from '../../components/shared/ProgramFilter'
-import UniversityCard from '../../components/shared/UniversityCard'
+import ProgramFilter from '@/components/shared/ProgramFilter'
+import UniversityCard from '@/components/shared/UniversityCard'
 
-import universitiesList from '../../data/universities.json'
+import universitiesList from '@/data/universities.json'
 
 export default {
   components: {
@@ -33,7 +33,7 @@ export default {
     setTimeout(() => {
       this.universities = universitiesList.universities;
       this.isReady = true;
-    }, 1000);
+    }, 300);
   },
 
   data() {

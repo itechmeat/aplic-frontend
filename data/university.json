@@ -1,0 +1,29 @@
+{
+  "slug": "aberystwyth_university",
+  "name": "Aberystwyth University",
+  "logo": "https://aplic.io/uploads/ba4bff1f-da4f-49dd-bee5-784cfae9d3e2_logo_Aber.png",
+  "poster": "https://aplic.io/uploads/ba4bff1f-da4f-49dd-bee5-784cfae9d3e2_campus_Aber%20Cam.jpg",
+  "processing_time_to": 30,
+  "location": {
+    "country": {
+      "slug": "united_kingdom",
+      "name": "United Kingdom"
+    },
+    "city": {
+      "slug": "aberystwyth",
+      "name": "Aberystwyth"
+    }
+  },
+  "price": {
+    "currency": "GBP",
+    "international": 15200,
+    "domestic": 0,
+    "living": 7550,
+    "application_fee": 13
+  },
+  "exams": ["IELTS", "PTE", "TOEFL iBT"],
+  "review": "Review",
+  "degree": "Bachelor degree",
+  "type": ["Full-Time"],
+  "months": 36
+}

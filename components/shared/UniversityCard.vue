@@ -11,15 +11,11 @@
               {{ university.name }}
             </nuxt-link>
           </h3>
-          <div class="location">
-            <ui-icon name="map-marker" class="marker" />
-            <nuxt-link :to="'/location/' + university.location.country.slug + '/' + university.location.city.slug" class="city">
-              {{ university.location.city.name }}
-            </nuxt-link>,
-            <nuxt-link :to="'/location/' + university.location.country.slug" class="country">
-              {{ university.location.country.name }}
-            </nuxt-link>
-          </div>
+          <Location
+            class="location"
+            :country="{name: university.location.country.name, slug: university.location.country.slug}"
+            :city="{name: university.location.city.name, slug: university.location.city.slug}"
+          />
         </header>
 
         <section>
@@ -108,20 +104,24 @@
       </div>
 
       <div class="action">
-        <nuxt-link :to="'/universities/' + university.slug" class="btn">
-          <ui-button type="primary" outline wide>Read More</ui-button>
-        </nuxt-link>
+        <ui-button :href="'/universities/' + university.slug" type="primary" outline wide>Read More</ui-button>
       </div>
     </footer>
   </ui-box>
 </template>
 
 <script>
+import Location from '../../components/shared/Location';
+
 export default {
+  components: {
+    Location,
+  },
+
   props: {
     university: {
       type: Object,
-      default() {
+      default () {
         return null;
       },
     },
@@ -167,27 +167,6 @@ h3 {
   line-height: 1.5;
 
   a {
-    text-decoration: none;
-
-    &:hover {
-      text-decoration: underline;
-    }
-  }
-}
-
-.location {
-  grid-area: location;
-  margin-top: 3px;
-  color: $c_warning;
-  font-size: $fs_small;
-
-  .marker {
-    margin-right: 5px;
-  }
-
-  a {
-    display: inline-block;
-    color: inherit;
     text-decoration: none;
 
     &:hover {

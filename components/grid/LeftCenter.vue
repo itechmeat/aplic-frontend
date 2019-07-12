@@ -1,7 +1,7 @@
 <template>
   <div class="grid">
-    <div class="promo">
-      <slot name="promo"></slot>
+    <div class="head">
+      <slot name="head"></slot>
     </div>
 
     <aside>
@@ -23,7 +23,7 @@
   align-items: flex-start;
 }
 
-.promo {
+.head {
   flex: 0 0 100%;
   margin-bottom: $g*2;
 }

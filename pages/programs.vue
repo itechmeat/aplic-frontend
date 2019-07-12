@@ -14,10 +14,10 @@
 </template>
 
 <script>
-import ProgramFilter from '../components/shared/ProgramFilter'
-import ProgramCard from '../components/shared/ProgramCard'
+import ProgramFilter from '@/components/shared/ProgramFilter'
+import ProgramCard from '@/components/shared/ProgramCard'
 
-import programsList from '../data/programs.json'
+import programsList from '@/data/programs.json'
 
 export default {
   components: {
@@ -29,7 +29,7 @@ export default {
     setTimeout(() => {
       this.programs = programsList.programs;
       this.isReady = true;
-    }, 1000);
+    }, 300);
   },
 
   data() {
