@@ -15,7 +15,7 @@
             <ui-button type="accent">Accent</ui-button>
           </li>
           <li>
-            <ui-button type="success">Success</ui-button>
+            <ui-button type="danger">Danger</ui-button>
           </li>
           <li>
             <ui-button type="info">Info</ui-button>
@@ -39,7 +39,7 @@
             <ui-button outline type="accent">Accent</ui-button>
           </li>
           <li>
-            <ui-button outline type="success">Success</ui-button>
+            <ui-button outline type="Danger">Danger</ui-button>
           </li>
           <li>
             <ui-button outline type="info">Info</ui-button>
@@ -81,7 +81,7 @@
         <h2>Button-Link</h2>
         <ul>
           <li>
-            <ui-button type="info" href="/">Link to Homepage</ui-button>
+            <ui-button type="info" to="/">Link to Homepage</ui-button>
           </li>
         </ul>
 
@@ -120,7 +120,7 @@
             <ui-button icon="search" type="accent" outline>Button</ui-button>
           </li>
           <li>
-            <ui-button icon="search" type="success" outline>Button</ui-button>
+            <ui-button icon="search" type="danger" outline>Button</ui-button>
           </li>
           <li>
             <ui-button icon="search" type="info" outline>Button</ui-button>
@@ -141,7 +141,7 @@
             <ui-button icon="search" icon-position="center" type="accent" outline></ui-button>
           </li>
           <li>
-            <ui-button icon="search" icon-position="center" type="success" outline></ui-button>
+            <ui-button icon="search" icon-position="center" type="danger" outline></ui-button>
           </li>
           <li>
             <ui-button icon="search" icon-position="center" type="info" outline></ui-button>
@@ -180,10 +180,10 @@
             <ui-button type="accent" disabled>Disabled</ui-button>
           </li>
           <li>
-            <ui-button type="success" disabled>Disabled</ui-button>
+            <ui-button type="danger" disabled>Disabled</ui-button>
           </li>
           <li>
-            <ui-button type="info" disabled href="/">Disabled</ui-button>
+            <ui-button type="info" disabled to="/">Disabled</ui-button>
           </li>
           <li>
             <ui-button type="light" disabled>Disabled</ui-button>
@@ -200,10 +200,10 @@
             <ui-button outline type="accent" disabled>Disabled</ui-button>
           </li>
           <li>
-            <ui-button outline type="success" disabled>Disabled</ui-button>
+            <ui-button outline type="danger" disabled>Disabled</ui-button>
           </li>
           <li>
-            <ui-button outline type="info" disabled href="/">Disabled</ui-button>
+            <ui-button outline type="info" disabled to="/">Disabled</ui-button>
           </li>
           <li>
             <ui-button outline type="light" disabled>Disabled</ui-button>

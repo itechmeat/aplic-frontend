@@ -1,13 +1,9 @@
 <template>
-  <grid-left-center>
+  <grid-main>
     <ui-box slot="head">
       <header>
         <img :src="university.logo" alt="">
-        <h1>
-          <nuxt-link :to="'/universities/' + university.slug">
-            {{ university.name }}
-          </nuxt-link>
-        </h1>
+        <h1>{{ university.name }}</h1>
         <Location
           v-if="university"
           class="location"
@@ -28,26 +24,50 @@
         <ui-spinner />
       </div>
       <article v-else class="university">
+        <university-card v-if="university" :university="university" />
+
         <section class="programs">
           <ui-box>
-            <h2>Page of program</h2>
+            <h2>Popular programs</h2>
+            <ul>
+              <li>
+                <nuxt-link :to="'/universities/' + university.slug + '/programs/graduate_diploma_in_event_management'">
+                  Graduate Diploma in Event Management
+                </nuxt-link>
+              </li>
+              <li>
+                <nuxt-link :to="'/universities/' + university.slug + '/programs/bachelor_of_design'">
+                  Bachelor of Design (Fashion Technology and Design)
+                </nuxt-link>
+              </li>
+              <li>
+                <nuxt-link :to="'/universities/' + university.slug + '/programs/bachelor_of_applied_science'">
+                  Bachelor of Applied Science (Physical Activity and Health Promotion)
+                </nuxt-link>
+              </li>
+            </ul>
+            <p>
+              <ui-button :href="'/universities/' + university.slug + '/programs/'" type="primary" outline>All Programs</ui-button>
+            </p>
           </ui-box>
         </section>
       </article>
     </div>
-  </grid-left-center>
+  </grid-main>
 </template>
 
 <script>
 import Location from '@/components/shared/Location';
-import SideMenu from '@/components/shared/SideMenu'
+import SideMenu from '@/components/shared/SideMenu';
+import UniversityCard from '@/components/shared/UniversityCard';
 
-import UNIVERSITY from '../../../../data/university.json'
+import UNIVERSITY from '@/data/university.json';
 
 export default {
   components: {
     Location,
     SideMenu,
+    UniversityCard,
   },
 
   mounted () {
@@ -59,11 +79,15 @@ export default {
 
   data () {
     return {
-      university: UNIVERSITY,
+      university: [],
       isReady: false,
       sections: [
         { link: '#overview', text: 'Program overview'},
         { link: '#study', text: 'Study options'},
+        { link: '#requirements', text: 'Requirements'},
+        { link: '#funding', text: 'Funding'},
+        { link: '#career', text: 'Career opportunities'},
+        { link: '#students', text: 'International students'},
         { link: '#campus', text: 'Campus location'},
         { link: '#programs', text: 'Similar programs'},
       ],
@@ -116,15 +140,6 @@ header {
 h1 {
   margin: 0;
   font-size: $fs_large;
-
-  a {
-    color: inherit;
-    text-decoration: none;
-
-    &:hover {
-      text-decoration: underline;
-    }
-  }
 }
 
 .location {
@@ -147,6 +162,8 @@ h1 {
 }
 
 .programs {
+  margin-top: $g;
+
   h2 {
     margin: 0 0 10px;
   }

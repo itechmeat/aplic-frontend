@@ -1,6 +1,6 @@
 <template>
   <button
-    v-if="!href"
+    v-if="!to"
     :class="buttonClass"
     :disabled="disabled"
     @click="handleClick"
@@ -24,7 +24,7 @@
 
   <nuxt-link
     v-else
-    :to="!disabled ? href : ''"
+    :to="!disabled ? to : ''"
     :class="buttonClass"
     role="button"
     @click="handleClick"
@@ -50,7 +50,7 @@
 <script>
 export default {
   props: {
-    href: String,
+    to: String,
     type: {
       type: String,
       default () {
@@ -145,16 +145,19 @@ export default {
   color: $text;
 
   &:hover {
-    background: $bgc - #050505;
+    //background: $bgc - #050505;
+    background: adjust-color($bgc, $lightness: -10);
   }
 
   &:active,
   &.active {
-    background: $bgc - #070707;
+    //background: $bgc - #070707;
+    background: adjust-color($bgc, $lightness: -15);
   }
 
   &:focus {
-    background: $bgc - #111;
+    //background: $bgc - #111;
+    background: adjust-color($bgc, $lightness: -20);
     box-shadow: 0 0 12px rgba($shadow, 1);
   }
 
@@ -246,6 +249,10 @@ export default {
 
   &_success {
     @include buttonStyle('success', $c_success, $c_light);
+  }
+
+  &_danger {
+    @include buttonStyle('success', $c_danger, $c_light);
   }
 
   &_info {

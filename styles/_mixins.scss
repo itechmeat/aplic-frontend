@@ -79,20 +79,6 @@
   min-width: $g_layout_min;
   margin: 0 auto;
   padding: 0 $g;
-
-  //@include display(phablet) {
-  //	max-width: $g_layout_max + 20;
-  //	padding: 0 $g + 10;
-  //}
-  //
-  //@include display(desktop) {
-  //	max-width: $g_layout_max + 40;
-  //	padding: 0 $g + 10;
-  //
-  //	.layout_wide & {
-  //		max-width: 100%;
-  //	}
-  //}
 }
 
 %inner-wide {

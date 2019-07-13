@@ -9,7 +9,7 @@ import Input from '../components/ui/Input.vue'
 import FormField from '../components/ui/FormField.vue'
 import Avatar from '../components/ui/Avatar.vue'
 
-import LeftCenter from '../components/grid/LeftCenter.vue'
+import GridMain from '../components/grid/Main.vue'
 
 Vue.component('ui-container', Container);
 Vue.component('ui-section', Section);
@@ -21,4 +21,4 @@ Vue.component('ui-input', Input);
 Vue.component('ui-form-field', FormField);
 Vue.component('ui-avatar', Avatar);
 
-Vue.component('grid-left-center', LeftCenter);
+Vue.component('grid-main', GridMain);

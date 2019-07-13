@@ -1,43 +1,46 @@
-// media
-$m_qhd: 1440px;                // Media for HD screen monitor
-$m_hd: 1280px;                // Media for FullHD screen monitor
-$m_big: 1140px;                // Media for Big screen monitor
-$m_desktop: 960px;            // Media for Tablet PC
-$m_tablet: 762px;              // Media for Fablets
-$m_phablet: 600px;            // Media for Smartphones
-$m_smart: 480px;              // Media for Smartphones
-$m_phone: 380px;              // Media for Small phones
+// breakpoints
+$m_qhd: 1440px;
+$m_hd: 1280px;
+$m_big: 1140px;
+$m_desktop: 960px;
+$m_tablet: 762px;
+$m_phablet: 600px;
+$m_smart: 480px;
+$m_phone: 380px;
 
 
 // grid main
-$g: 20px;                    // Main grid step
-$g_layout_max: 1200px;                // Max size page
-$g_layout_min: 320px;              // Min size page
+$g: 20px;
+$g_layout_max: 1200px;
+$g_layout_min: 320px;
 $g_layout_wide: 100%;
 $g_header: 66px;
-$g_header_compact: 60px;
 
 
 // colors
-$c_dark: #000;                  // Dark color
-$c_light: #FFF;                  // Light color
-$c_primary: #6f45f1;            // Primary color
-$c_primary_hover: #6f45f1;                // Primary hover color
-$c_accent: #2ad8b5;              // Accent color
-$c_accent_hover: $c_accent;              // Accent hover color
-$c_warning: #fc375c;              // Accent color
-$c_warning_hover: #fc375c;              // Accent hover color
-$c_success: $c_accent;            // Success color
-$c_success_hover: $c_success;            // Success hover color
-$c_info: #2BA5FF;                // Success color
-$c_info_hover: $c_success;                  // Success hover color
-$c_link: $c_primary;                  // Link color
-$c_link_hover: $c_link;                  // Link hover color
-$c_text: #58688b;                  // Text color
-$c_text_secondary: #8484a2;              // Text secondary color
-$c_text_hint: #56668a;                  // Text hint color
-$c_border: #f4f0fa;              // Border color
-$c_border_dark: #adaab1;              // Border color
+@function hoverColor($color) {
+  @return adjust-color($color, $lightness: -10);
+}
+
+$c_dark: #000;
+$c_light: #FFF;
+$c_primary: #6f45f1;
+$c_primary_hover: hoverColor($c_primary);
+$c_accent: #2ad8b5;
+$c_accent_hover: hoverColor($c_accent);
+$c_danger: #fc375c;
+$c_danger_hover: hoverColor($c_danger);
+$c_success: $c_accent;
+$c_success_hover: hoverColor($c_success);
+$c_info: #007bff;
+$c_info_hover: hoverColor($c_info);
+$c_link: $c_primary;
+$c_link_hover: hoverColor($c_link);
+$c_text: #58688b;
+$c_text_secondary: #8484a2;
+$c_text_hint: #56668a;
+$c_border: #f4f0fa;
+$c_border_dark: #adaab1;
 $c_bg: #f4f0fa;
 
 $c_brand_facebook: #3B5998;
@@ -46,19 +49,18 @@ $c_brand_google: #EA4335;
 
 
 // font-family
-$ff: Nunito, Helvetica, Arial, sans-serif;  // Main stack
-$ff_alt: 'Nunito Sans', Helvetica, Arial, sans-serif;  // Main stack
-
+$ff: Nunito, Helvetica, Arial, sans-serif;
+$ff_alt: 'Nunito Sans', Helvetica, Arial, sans-serif;
 
 // font-size
-$fs_body: 16px;                  // main size
-$fs_tiny: 12px;                  // big tiny
-$fs_small: 14px;                // big small
-$fs_big: 18px;                  // big size
-$fs_large: 22px;                // large size
-$fs_title: 28px;                // title
-$fs_headline: 36px;               // headline
+$fs_body: 16px;
+$fs_tiny: 12px;
+$fs_small: 14px;
+$fs_big: 18px;
+$fs_large: 22px;
+$fs_title: 28px;
+$fs_headline: 36px;
 
 
 // speed animation
-$s: 0.25s;                    // Main speed animation
+$s: 0.25s;

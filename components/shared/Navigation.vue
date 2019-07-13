@@ -1,6 +1,6 @@
 <template>
   <nav>
-    <ui-button href="/" outline>
+    <ui-button to="/" outline>
       Log In
     </ui-button>
   </nav>

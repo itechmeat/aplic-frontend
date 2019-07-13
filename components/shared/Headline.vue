@@ -11,8 +11,8 @@
 </template>
 
 <script>
-import Logo from './Logo'
-import Navigation from './Navigation'
+import Logo from './Logo';
+import Navigation from './Navigation';
 
 export default {
   components: {

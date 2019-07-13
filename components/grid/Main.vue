@@ -4,13 +4,17 @@
       <slot name="head"></slot>
     </div>
 
-    <aside v-if="$slots.left">
+    <aside v-if="$slots.left" class="left">
       <slot name="left"></slot>
     </aside>
 
     <main>
       <slot></slot>
     </main>
+
+    <aside v-if="$slots.right" class="right">
+      <slot name="left"></slot>
+    </aside>
   </div>
 </template>
 
@@ -27,12 +31,21 @@
   margin-bottom: $g*2;
 }
 
-aside {
+main {
+  flex: 1;
+}
+
+.left,
+.right {
   flex: 0 0 276px;
   margin-right: $g*2;
 }
 
-main {
-  flex: 1;
+.left {
+  margin-right: $g*2;
+}
+
+.right {
+  margin-left: $g*2;
 }
 </style>

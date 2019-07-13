@@ -104,7 +104,7 @@
       </div>
 
       <div class="action">
-        <ui-button :href="'/universities/' + university.slug" type="primary" outline wide>Read More</ui-button>
+        <ui-button :to="'/universities/' + university.slug" type="primary" outline wide>Read More</ui-button>
       </div>
     </footer>
   </ui-box>

@@ -1,5 +1,5 @@
 <template>
-  <grid-left-center>
+  <grid-main>
     <ui-box slot="head">
       <h1>Select your University</h1>
     </ui-box>
@@ -14,14 +14,14 @@
         <university-card :university="university" />
       </article>
     </div>
-  </grid-left-center>
+  </grid-main>
 </template>
 
 <script>
-import ProgramFilter from '@/components/shared/ProgramFilter'
-import UniversityCard from '@/components/shared/UniversityCard'
+import ProgramFilter from '@/components/shared/ProgramFilter';
+import UniversityCard from '@/components/shared/UniversityCard';
 
-import universitiesList from '@/data/universities.json'
+import universitiesList from '@/data/universities.json';
 
 export default {
   components: {

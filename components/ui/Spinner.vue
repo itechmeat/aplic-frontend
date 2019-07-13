@@ -40,7 +40,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-$colors: $c_success, $c_warning, $c_primary, $c_text;
+$colors: $c_success, $c_danger, $c_primary, $c_text;
 $d: 175.6449737548828;
 
 .spinner {

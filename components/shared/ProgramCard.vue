@@ -207,7 +207,7 @@ h3 {
 .location {
   grid-area: location;
   margin-top: 3px;
-  color: $c_warning;
+  color: $c_danger;
   font-size: $fs_small;
 
   .marker {

@@ -1,5 +1,5 @@
 <template>
-  <grid-left-center>
+  <grid-main>
     <program-filter slot="left" v-model="filter" @submit="filterPrograms" />
 
     <div class="programs">
@@ -13,14 +13,14 @@
         <program-card :program="program" />
       </article>
     </div>
-  </grid-left-center>
+  </grid-main>
 </template>
 
 <script>
-import ProgramFilter from '@/components/shared/ProgramFilter'
-import ProgramCard from '@/components/shared/ProgramCard'
+import ProgramFilter from '@/components/shared/ProgramFilter';
+import ProgramCard from '@/components/shared/ProgramCard';
 
-import programsList from '@/data/programs.json'
+import programsList from '@/data/programs.json';
 
 export default {
   components: {

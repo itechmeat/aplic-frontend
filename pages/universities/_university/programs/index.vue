@@ -1,5 +1,5 @@
 <template>
-  <grid-left-center>
+  <grid-main>
     <ui-box slot="head">
       <header>
         <img :src="university.logo" alt="">
@@ -52,14 +52,14 @@
         </section>
       </article>
     </div>
-  </grid-left-center>
+  </grid-main>
 </template>
 
 <script>
 import Location from '@/components/shared/Location';
-import SideMenu from '@/components/shared/SideMenu'
+import SideMenu from '@/components/shared/SideMenu';
 
-import UNIVERSITY from '@/data/university.json'
+import UNIVERSITY from '@/data/university.json';
 
 export default {
   components: {
