@@ -47,7 +47,7 @@
               </li>
             </ul>
             <p>
-              <ui-button :href="'/universities/' + university.slug + '/programs/'" type="primary" outline>All Programs</ui-button>
+              <ui-button :to="'/universities/' + university.slug + '/programs/'" type="primary" outline>All Programs</ui-button>
             </p>
           </ui-box>
         </section>

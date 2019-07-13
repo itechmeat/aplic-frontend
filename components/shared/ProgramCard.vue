@@ -3,16 +3,16 @@
     <div class="about">
       <div class="main">
         <header>
-          <nuxt-link :to="'/universities/' + program.university.slug" class="logo">
+          <nuxt-link :to="universityLink" class="logo">
             <img :src="program.university.logo" alt="">
           </nuxt-link>
           <h3>
-            <nuxt-link :to="'/universities/' + program.university.slug + '/programs/' + program.slug">
+            <nuxt-link :to="universityLink + '/programs/' + program.slug">
               {{ program.title }}
             </nuxt-link>
           </h3>
           <div class="university">
-            <nuxt-link :to="'/universities/' + program.university.slug">
+            <nuxt-link :to="universityLink">
               {{ program.university.name }}
             </nuxt-link>
           </div>
@@ -118,7 +118,7 @@
       </div>
 
       <div class="action">
-        <ui-button type="primary" outline wide>Apply</ui-button>
+        <ui-button :to="universityLink" type="primary" outline wide>Apply</ui-button>
       </div>
     </footer>
   </ui-box>
@@ -138,6 +138,12 @@ export default {
       default() {
         return null;
       },
+    },
+  },
+
+  computed: {
+    universityLink() {
+      return `/universities/${this.program.university.slug}`;
     },
   },
 };

@@ -82,7 +82,6 @@ export default {
       let result = [];
 
       if (this.filter.text !== '') {
-        console.log(this.filter.text);
         result = this.allPrograms.map(program => {
           if (!program.title.toLowerCase().includes(this.filter.text.toLowerCase())) {
             return;
